@@ -28,7 +28,7 @@ public class Main {
 		System.out.println(" equals to " + factorial(number));
 	}
 
-	private static String factorial(long number) {
+	private static BigInteger factorial(long number) {
 		BigInteger one = BigInteger.valueOf(1);
 		BigInteger factorial = BigInteger.valueOf(1);
 		BigInteger bigIntegerNumber = BigInteger.valueOf(number);
@@ -37,6 +37,6 @@ public class Main {
 			bigIntegerNumber = bigIntegerNumber.subtract(one);
 		}
 
-		return factorial.toString();
+		return factorial;
 	}
 }
